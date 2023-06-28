@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih hotel 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hotel.css">
+    </head>
+    <body>
+        <div class="hero">
+            <img src="merapi_hotel 1/hotel1.jpeg">
+                <div class="topnav">
+                   <b><img src="logo ppw.png" height="25px" ></b>
+                   <a href="contact.html">Contact Us</a>
+                   <a href="about.html">About</a>
+                   <a href="2_temp_dpn_yogya.html">Home</a>
+                </div>
+           </div>
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="merapi_hotel 1/hotel2.jpeg">
+            </div>        
+            <div class="image fade">
+            <img src="merapi_hotel 1/hotel3.jpeg" >
+            </div>        
+            <div class="image fade">
+            <img src="merapi_hotel 1/hotel4.jpeg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Griya Persada Convention Hotel</h1>
+            <p>Griya Persada Convention Hotel and Resort didesain untuk melengkapi momen indah Anda, sehingga meninggalkan kesan yang tak dapat dilupakan. Servis yang baik dan fasilitas yang disediakan dapat mendukung berbagai macam kegiatan Anda, baik rekreasi keluarga, kepentingan bisnis maupun event sosial. Merupakan sebuah kehormatan bagi kami untuk membantu Anda dan orang yang Anda cintai untuk menikmati waktu berharga Anda dengan pelayanan yang prima. Griya Persada Convention Hotel and Resort dibangun untuk memberikan sebuah cara baru mengerjakan bisnis Anda dengan relaksasi alami, dan kenyamanan yang mewah. Kami menyediakan berbagai fasilitas yang terintegrasi dengan baik untuk bisnis dan berbagai macam keperluan Anda untuk menjamin kenyamanan selama Anda tinggal.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Dalam Hotel</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="merapi_hotel 1/hotel5.jpeg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="merapi_hotel 1/hotel6.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="merapi_hotel 1/hotel7.jpeg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.70402405819!2d110.41920527307346!3d-7.6071518924079085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787a290076b%3A0x2d2d9acade087727!2sGriya%20Persada%20Convention%20Hotel%20%26%20Resort%20Kaliurang!5e0!3m2!1sen!2sid!4v1687777386580!5m2!1sen!2sid" 
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                                <h1>ULASAN</h1>
+                            <!-- Slideshow container -->
+                            <div class="con2">
+                                
+                                    <!-- Full-width slides/quotes -->
+                                    <div class="mySlides">
+                                        <img src="merapi_foto/merapi2.jpg">
+                                        <p class="author">- Mei</p>
+                                      <q>Hotelnya asri karena mmg konsepmya resort... ada bbrp resto di sini jd gak usah khwtr klo laper sore dan malam.hari
+                                        ada juga OObakso yg cocok dgn dinginnya kaliurang,. Ada cafe juga klo mau ngopi. Fasilitas lumayan lengkap, ada kolam renang dan gym, tempat bermain anak out door juga ada. Hanya saja hotel ini letak kamarnya agak membingungkan, mmg harus di antar oleh resepsionis atau petugas  hotel.. saya dapat kamar di gedung belakang dekat resto rama shinta. Dengan jendela utama dan pintu menghadap koridor langsung agak kurang nyaman, karena suara orang berjalan di koridor terdengar sangat jelas, dan juga ketika mereka ngobrol. Belum lagi dr atap sering terdengar suara langkah kaki yg seolah2 atap juga ikut bergetar. Ini yg agak tidak.nyaman... utk kamar mandi bersih. Breakfast juga lumayan tapi lengkap...</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="merapi_foto/merapi5.jpg">
+                                        <p class="author">- Andy</p>
+                                      <q>Tempo hari saya dan keluarga berenam menginap di sini ambil 2 kamar yg buat masing masing  3 orang. Penilaian saya hotel ini cukup recommended, nyaman, kamar luas, kolam renang, banyak ruang terbuka hijau,  pelayanan ramah dan baik, hidangan makan pagi juga cukup enak dan banyak macamnya. Melayani pemesanan jeep untuk keliling Merapi bahkan dikasih bonus air mineral sama gula kacang buat bekal keliling2... ditambah lagi bonus keliling daerah wisata sekitar situ pake mobil odong odong punya hotel gratis.</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="merapi_foto/merapi7.jpg">
+                                        <p class="author">- Ramadhan</p>
+                                      <q>Hotel yang menurut saya paling baik di areanya. Cocok untuk kegiatan keluarga kecil sampai keluarga besar, bahkan kegiatan kumpulan teman atau kolega kantor. Hotel ini memiliki banyak jenis kamar dan fasilitas, mulai dari tempat olahraga, gym, kolam renang, sampai dengan halaman bermain yang bisa digunakan untuk outbound. Makanan yang disajikan beragam dan tetap enak, dilayani dengan cepat dan sopan. Anda juga bisa menemui kearifan lokal dengan menemui penjual jadah tempe dan salak pondoh di pagi hari jika beruntung. Sebelah hotel ini adalah kebun binatang mini yang menjadi salah satu fasilitas untuk tamu hotel.</q><br>
+                                    </div>
+                                  
+                                  
+    </div>
+
+
+    <a href="h.merapi_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body> 
+
+</html>

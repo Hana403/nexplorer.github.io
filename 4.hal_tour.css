@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif
+}
+
+body{
+  margin: 0; 
+  background-color: white;
+  background-attachment: fixed;
+}
+
+.topnav{
+    position: absolute;
+    width: 100% ;
+    overflow: hidden;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.topnav a{
+    box-shadow: inset 0 0 0 0 #B2BEB5;
+    float: right;
+    color: white;
+    padding: 8px;
+    margin-left: 10px;
+    margin-top: 4px;
+    margin-right: 15px;
+    text-decoration: none;
+    position: relative;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 15px;
+    width: 8%;
+    text-align: center;
+}
+
+.topnav a:hover{
+    box-shadow: inset 100px 0 0 0 #F9F871;
+    color: black;
+}
+
+.topnav b{
+    padding: 8px;
+    margin: 4px;
+    font-size: medium;
+    color: black;
+    float: left;
+}
+
+.hero{
+    width: 100%;
+    height: 13cm;
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
+
+.hero img{
+    margin-bottom: 3px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+h2{
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-bottom: 20px;
+}
+
+.teks{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1cm;
+    text-align: center;
+
+    
+}
+
+.teks h4{
+  margin: 0%;
+}
+
+.teks h1{
+  margin: 0%;
+}
+
+.teks p{
+  margin: 0%;
+  font-size: medium;
+}
+
+.container{
+    display: flex;
+    position: absolute;
+    top: 10cm;
+
+}
+
+.card{
+    position: relative;
+    color: transparent;
+    left: 7.5cm;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    height: 5cm;
+    width: 5cm;
+}
+
+.card a{
+    color: transparent;
+    text-decoration: none;
+}
+.card a:hover{
+    color: white;
+}
+
+.card img{
+    display: block;
+    height: 5cm;
+    width: 5cm;
+    margin-left: 2px;
+    margin-right: 10px;
+    border-radius: 15px;
+    background-size: cover;
+    filter: grayscale(none);
+    transition: all 0.5s ease;
+}
+
+
+.card:hover{
+    filter:hue-rotate(45deg);
+    transform: scale(1.04);
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+    color: white;
+}
+
+.desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    text-align: center;
+    margin: 0;
+}
+
+.desc1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: large;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+.back1{
+    position: absolute;
+    left: 7%;
+
+    top: 12.5cm;
+}
+
+.Back{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 11px;
+    background-color: #D6e4f0;
+    border-radius: 15px;
+    width: 5cm;
+    height: 1.1cm;
+    text-align: center;
+    float: right;
+    text-decoration: none;
+    position: relative;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    color: black;
+    aspect-ratio: 1;
+    outline: calc(10%/2) solid #0009;
+    outline-offset: calc(10%/-2);
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.Back:hover{
+    box-shadow: inset 1000px 0 0 0 #163172;
+    color: white;
+    outline: 5px solid #163172;
+    outline-offset: 8px;
+}
+
+.fom{
+    position: absolute;
+    
+  }
+  
+  .fom img{
+    filter: grayscale(0%);
+  }

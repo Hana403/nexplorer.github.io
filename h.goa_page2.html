@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih hotel 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hotel.css">
+    </head>
+    <body>
+        <div class="hero">
+            <img src="goa_hotel 2/hotel3.jpg">
+                <div class="topnav">
+                   <b><img src="logo ppw.png" height="25px" ></b>
+                   <a href="contact.html">Contact Us</a>
+                   <a href="about.html">About</a>
+                   <a href="2_temp_dpn_yogya.html">Home</a>
+                </div>
+           </div>
+
+   
+
+ 
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="goa_hotel 2/hotel1.jpeg">
+            </div>        
+            <div class="image fade">
+            <img src="goa_hotel 2/hotel3.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="goa_hotel 2/hotel4.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Hotel Santika Gunungkidul</h1>
+            <p>Terletak di Siyonokulon, 31 km dari Candi Prambanan, Hotel Santika Gunungkidul menawarkan akomodasi dengan pusat kebugaran, parkir pribadi gratis, taman, dan restoran. Hotel bintang 3 ini menawarkan layanan kamar dan resepsionis 24 jam.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Dalam Hotel</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="goa_hotel 2/hotel5.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="goa_hotel 2/hotel6.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="goa_hotel 2/hotel7.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.581987964239!2d110.57339277307844!3d-7.938649592085422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a4dc9f4abf9cf%3A0x1552c34b694723d5!2sHotel%20Santika%20Gunungkidul%20-%20Jogja!5e0!3m2!1sen!2sid!4v1687793158164!5m2!1sen!2sid"
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                                <h1>ULASAN</h1>
+                            <!-- Slideshow container -->
+                            <div class="con2">
+
+                                
+                                    <!-- Full-width slides/quotes -->
+                                    <div class="mySlides">
+                                        <img src="goa_hotel 1/griya5.jpg">
+                                        <p class="author">- Dwi</p>
+                                      <q>Hotel baru, bersih, kamar lumayan luas, kolam renang sangat nyaman krn sepi ga ada yang berenang jadi serasa kolam pribadi, makanan standard rasa hotel, cuma 1 sih kurangnya, suara kamar mandi/shower kamar sebelah kedengeran jelas dari dalam kamar, sangat mengganggu.</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="goa_hotel 1/griya2.jpeg">
+                                        <p class="author">- Evi</p>
+                                      <q>Hotel terbaik kini hadir di Gunung Kidul. Meskipun lokasi masih cukup jauh dari pusat keramaian di Wonosari, tp cukup mudah menjangkau wisata pantai dari sini. Satu2nya gedung tinggi di area ini sehingga mudah dikenali. Sekitarnya ada beberapa warung makan dan resto, 10 menit dari minimarket terdekat. Staffnya friendly ke anak2 dan sangat helpfull. Hotel baru yg sangat nyaman untuk keluarga maupun business trip.
+                                        Area parkir mungkin ke depannya bisa ditambahkan canopy agar menuju mobil tidak terlalu kepanasan, mengingat cuaca Gunung Kidul yg selalu hot.</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="goa_hotel 1/goa6.jpg">
+                                        <p class="author">- Agus</p>
+                                      <q>Sangat Bagus ada hotel ditengah pedesaan yang baru pertama kali terbangun bangunan hotel berlantai 7 di playen gunungkidul semoga bisa menarik wisatawan dalam dan luar negeri untuk berkunjung.</q><br>
+                                    </div>
+                                  
+                                   
+    </div>
+
+    <a href="h.goa_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body>
+
+</html>

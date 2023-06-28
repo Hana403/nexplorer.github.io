@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif
+  }
+  
+  body{
+  margin: 0; 
+  background-color: #f6f6f6;
+  background-attachment: fixed;
+  }
+  
+  .topnav{
+    position: absolute;
+    width: 100% ;
+    overflow: hidden;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .topnav a{
+    box-shadow: inset 0 0 0 0 #B2BEB5;
+    float: right;
+    color: white;
+    padding: 8px;
+    margin-left: 10px;
+    margin-top: 4px;
+    margin-right: 15px;
+    text-decoration: none;
+    position: relative;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 15px;
+    width: 8%;
+    text-align: center;
+  }
+  
+  .topnav a:hover{
+    box-shadow: inset 100px 0 0 0 #F9F871;
+    color: black;
+  }
+  
+  .topnav b{
+    padding: 8px;
+    margin: 4px;
+    font-size: medium;
+    color: black;
+    float: left;
+  }
+  
+  .hero{
+    width: 100%;
+    height: 13cm;
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+  
+  }
+  
+  .hero img{
+    margin-bottom: 3px;
+    width: 100%;
+    background-size: cover;
+  }
+
+.teks{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1cm;
+
+    
+}
+
+.teks h4{
+  margin: 0%;
+}
+
+.teks h1{
+  margin: 0%;
+}
+
+.teks p{
+  margin: 0%;
+  font-size: medium;
+}
+
+
+.atas h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 4cm;
+}
+
+.container{
+  display: flex;
+  position: absolute;
+  top: 10cm;
+}
+
+.card{
+  position: relative;
+  color: transparent;
+  left: 10%;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  height: 5cm;
+  width: 5cm;
+}
+
+
+
+.card a{
+  color: transparent;
+  text-decoration: none;
+}
+.card a:hover{
+  color: white;
+}
+
+.card img{
+  width: 100%;
+  border-radius: 15px;
+  background-size: cover;
+  filter: grayscale(none);
+  transition: all 0.5s ease;
+  height: 5cm;
+  width: 5cm;
+  margin-left: 2px;
+  margin-right: 10px;
+}
+
+.card:hover{
+  filter: brightness(90%) hue-rotate(45deg);
+  transform: scale(1.04);
+  filter: grayscale(100%);
+  transition: 0.5s ease;
+  color: white;
+}
+
+.desc{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+  text-align: center;
+  margin: 0;
+}
+
+.fom{
+  position: absolute;
+  
+}
+
+.fom img{
+  filter: grayscale(0%);
+}
+
+
+.button{
+  width: 50%;
+  height: 2cm;
+  border-radius: 50px;
+  background-color: #D6e4f0;
+
+}
+
+.overlay{
+    background: linear-gradient(bottom to top, white,black);
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+    position: absolute;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih hotel 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hotel.css">
+    </head>
+    <body>
+        <div class="hero">
+            <img src="goa_hotel 1/griya9.jpg">
+                <div class="topnav">
+                   <b><img src="logo ppw.png" height="25px" ></b>
+                   <a href="contact.html">Contact Us</a>
+                   <a href="about.html">About</a>
+                   <a href="2_temp_dpn_yogya.html">Home</a>
+                </div>
+           </div>
+
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="goa_hotel 1/griya8.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="goa_hotel 1/griya7.jpeg" >
+            </div>        
+            <div class="image fade">
+            <img src="goa_hotel 1/griya1.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Griya Limasan Hotel</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates vitae vel nulla accusamus? Fugit non iure, 
+                repellendus ratione, sint quos a est consequatur, excepturi atque provident rerum libero molestias distinctio?</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Dalam Hotel</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="goa_hotel 1/griya2.jpeg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="goa_hotel 1/griya3.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="goa_hotel 1/griya4.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.3293722993494!2d110.60679981744384!3d-7.964872699999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bb35c696c1b6f%3A0x4dc04ff3f9990263!2sGriya%20Limasan%20Hotel!5e0!3m2!1sen!2sid!4v1687793844963!5m2!1sen!2sid"
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                                <h1>ULASAN</h1>
+                            <!-- Slideshow container -->
+                            <div class="con2">
+
+
+                                
+                                    <!-- Full-width slides/quotes -->
+                                    <div class="mySlides">
+                                        <img src="goa_foto/goa2.jpg">
+                                        <p class="author">- Ardani</p>
+                                      <q>Kamarnya oke WiFi nya oke parkir nya oke
+                                        Cuma pas waktu sarapan nya cuma nasi+telur doank
+                                        Sama kita cek in jam 2 siang lebih lah yaa  kita dsuruh cek out jam 12 padahal kita bayar full, awalnya sih di ksih tau cek out jam 1 tapi kenyataannya jam 12 di kasih taunya juga 15mnt sebelum jam 12</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="goa_foto/goa3.jpg">
+                                        <p class="author">- Zainudin</p>
+                                      <q>Family room 4 person agak sempit, AC dan water heater berfungsi dgn baik, kamar mandi perlu pembersihan dan mampet, spray kusam dan tdk ada bantal guling. Terdapat dapur bersama dan parkir kendaraan dilokasi. Sarapan pagi kurang bumbu dan hanya 1 lauk. Tarif kamar standart dgn tempat lain..</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="goa_foto/goa6.jpg">
+                                        <p class="author">- Raka</p>
+                                      <q>Penginapan yg cukup murah dan tersedia fasilitas yg nyaman untuk menjadi tempat peristirahatan anda.. Karyawan dan owner yg ramah, dan sangat bisa diandalkan untuk para wisatawan lokal..</q><br>
+                                    </div>
+                                  
+                                   
+    </div>
+
+
+    <a href="h.goa_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body> 
+
+</html>

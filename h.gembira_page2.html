@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih hotel 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hotel.css">
+    </head>
+    <body>
+        <div class="hero">
+            <img src="hotel 2/fave-hotel-kusumanegara-5.jpg">
+                <div class="topnav">
+                   <b><img src="logo ppw.png" height="25px" ></b>
+                   <a href="contact.html">Contact Us</a>
+                   <a href="about.html">About</a>
+                   <a href="2_temp_dpn_yogya.html">Home</a>
+                </div>
+           </div>
+
+  
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="hotel 2/favehotel-kusumanegara.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="hotel 2/Fave Hotel Kusumanegara 6.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="hotel 2/fave-hotel-kusumanegara-4.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>favehotel Kusumanegara</h1>
+            <p>Menggabungkan antara fungsi, gaya, dan nilai ekonomis bagi wisatawan bisnis ataupun liburan,
+               masing-masing kamar dan suite yang modern, bergaya dan super bersih memiliki TV LED 32 inci yang canggih, koneksi internet super cepat,
+                sistem keamanan kartu kunci, penyejuk ruangan, kotak penyimpanan, dan tempat tidur yang nyaman. Disamping kamar,
+               para tamu juga dapat menikmati berbagai pilihan fasilitas termasuk ruang pertemuan serta kolam renang untuk dewasa dan anak-anak.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Dalam Hotel</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="hotel 2/fave1.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="hotel 2/Fave Hotel Kusumanegara 6.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="hotel 2/revato-437662-12314384-524760.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.8920838273107!2d110.38605941477815!3d-7.801248594378172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57644da187d5%3A0xb340aa8f67c05084!2sFave%20Hotel%20Kusumanegara!5e0!3m2!1sen!2sid!4v1687182311480!5m2!1sen!2sid"
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+
+        <h1>ULASAN</h1>
+                            <div class="con2">
+                               
+                               
+                                    <div class="mySlides">
+                                        <img src="hotel 2/fave-hotel-kusumanegara.jpg">
+                                        <p class="author">Kiki R. A.</p>
+                                      <q>spacious, comfy, and if you need hot water or water extra, easy to find near the elevator</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="hotel 2/fave-hotel-kusumanegara-4.jpg">
+                                        <p class="author">abhie_mh90</p>
+                                      <q>di jogja banyak hotel yang murah,namun lokasinya jauh dari kota. favehotel terletak di kota jogja, dekat kemana2, 
+                                        sehingga rekomended untuk mneginap dan jalan2 dsekitar hotel. murah tapi tidak murahan</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="hotel 2/fave-hotel-kusumanegara-5.jpg">
+                                        <p class="author">Pemula A</p>
+                                      <q>They have cool app named Archipelago Membership. This app is very usefull and helpfull. I book a room and have a good price, also discount for food and baverage. 
+                                        I can ask many thing like room services and some destination via chat on app</q><br>
+                                    </div>
+                                  
+                                  
+                                  </div>
+                                  
+
+    </div>
+
+    <a href="h.gembira_topnav_nochose.html">
+        <div class="Back"> ⇦ </div>
+    </a>
+    </body>
+
+</html>

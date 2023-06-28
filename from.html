@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="from.css">
+    <script>
+        function validasi(form){
+        if (form.nama.value == ""){
+        alert("Anda Belum Mengisikan Nama");
+        form.nama.focus(); return (false); }
+
+        if (form.email.value == ""){
+            alert("Anda Belum Mengisikan Email?");
+            form.email.focus(); return(false); 
+        }
+
+        if (form.subject.value == ""){
+            alert("Anda Belum Mengisikan Subject?");
+            form.subject.focus(); return(false); 
+        }
+        
+        if (form.kritik.value == ""){
+            alert("Anda belum Mengisi ");
+            form.kritik.focus(); return(false);
+        }
+    }
+        
+    </script>
+    </head>
+    <body>
+
+        <div class="hero">
+            <div class="topnav">
+               <b><img src="logo ppw.png" height="25px" ></b>
+               <a href="contact.html">Contact Us</a>
+               <a href="about.html">About</a>
+               <a href="2_temp_dpn_yogya.html">Home</a>
+            </div>
+       </div>
+
+        <div class="min" >
+            <h1>Kirim Pesan</h1>
+
+            <form action="thank.html" method="post" onsubmit="return validasi(this)">
+
+                <label for="user">Nama : </label>
+                <input type="text" name="nama">
+
+                <label for="email">Email : </label>
+                <input type="email" name="email">
+
+                <label for="user">Subject : </label>
+                <input type="text" name="subject">
+
+                 <label for="kritik">Isi Pesan : </label>
+                 <textarea name="kritik" cols="30" rows="10"></textarea>
+
+                
+                 <input type="submit" value="Submit">
+                 
+            </form>
+
+        </div>
+
+        <a href="contact.html">
+            <div class="Back"> ⇦ </div>
+        </a>
+    </body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih hotel 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hotel.css">
+    </head>
+    <body>
+        <div class="hero">
+            <img src="merapi_hotel 2/hotel1.jpg">
+                <div class="topnav">
+                   <b><img src="logo ppw.png" height="25px" ></b>
+                   <a href="contact.html">Contact Us</a>
+                   <a href="about.html">About</a>
+                   <a href="2_temp_dpn_yogya.html">Home</a>
+                </div>
+           </div>
+
+  
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="merapi_hotel 2/hotel2.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="merapi_hotel 2/hotel3.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="merapi_hotel 2/hotel4.jpeg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Griya Persada Convention Hotel</h1>
+            <p>Terletak di dataran tinggi Kaliurang yang sejuk dan dekat dengan Gunung Merapi, @K Hotel Kaliurang hadir dengan 3 pilihan tempat makan, kolam renang atap dan resepsionis 24 jam. WiFi gratis dapat diakses di seluruh area dan parkir gratis tersedia di lokasi.
+
+              Sepenuhnya ber-AC, setiap kamar dan suite di hotel bintang-4 ini didekorasi dengan warna krem yang dilengkapi TV layar datar, ketel listrik dan air mineral gratis juga disediakan. Shower, handuk dan peralatan mandi gratis dapat ditemukan di kamar mandi. Tipe Suites menawarkan ruangan yang lebih luas dan area duduk.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Dalam Hotel</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="merapi_hotel 2/hotel5.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="merapi_hotel 2/hotel6.jpeg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="merapi_hotel 2/hotel7.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.8095817331478!2d110.42538447307335!3d-7.595692492419086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a672dadc59c77%3A0x2d6eb656d93fc323!2s%40K%20Hotel%20Kaliurang!5e0!3m2!1sen!2sid!4v1687778053258!5m2!1sen!2sid" 
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                                <h1>ULASAN</h1>
+                            <!-- Slideshow container -->
+                            <div class="con2">
+
+                                
+                                    <!-- Full-width slides/quotes -->
+                                    <div class="mySlides">
+                                        <img src="merapi_foto/merapi2.jpg">
+                                        <p class="author">- Rico</p>
+                                      <q>Terakhir ke K hotel waktu corona, harganya jadi miring banget. untuk view pemandangan emang luar biasa. untuk kamarnya luas dan ada balconnya. parkir depan hotel luas. untuk jajan di luar hotel agak susah carinya. tapi untuk wisatanya deket banget sama tlogo putri. staffnya yang ramah bikin nyaman disini. ada juga kolam renang di rooftop</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="merapi_foto/merapi3.jpg">
+                                        <p class="author">- Efendi</p>
+                                      <q>hotelnya terletak di puncak merapi jogja.hotel terbaik yg pernah kita kunjungi sekelas santika. untuk fasilitas kamarnya oke banget. thanks</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="merapi_foto/merapi5.jpg">
+                                        <p class="author">- Ika</p>
+                                      <q>Lokasi strategis di pinggir jalan utama. Kebetulan dapat kamar yang di pojok jadi pemandangan kurang terlihat bagus. Kamar deluxe cukup besar dengan 1 bed ukuran king dan 1 bed ukuran queen. Kebesihan terutama sprei dan selimut kurang. Sarapan dimulai dari jam 7 pagi dengan banyak pilihan seperti bubur, nasi, pastry, buah, dan berbagai macam minuman. Lokasi hotel yang berada di kaki Gunung Merapi membuat hotel diterpa angin gunung malam hingga pagi hari dan suara angin cukup menggangu istirahat karena angin masuk ke kamar melalui sela2 pintu balkon</q><br>
+                                    </div>
+                                  
+                                    
+    </div>
+
+    <a href="h.merapi_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body>
+
+</html>

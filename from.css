@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif
+  }
+  
+  body{
+  margin: 0; 
+  background-image: url(foto/bg3.jpg);
+  background-size: cover;
+  }
+  
+  .topnav{
+    position: absolute;
+    width: 100% ;
+    overflow: hidden;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .topnav a{
+    box-shadow: inset 0 0 0 0 #B2BEB5;
+    float: right;
+    color: white;
+    padding: 8px;
+    margin-left: 10px;
+    margin-top: 4px;
+    margin-right: 15px;
+    text-decoration: none;
+    position: relative;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    border-radius: 15px;
+    width: 8%;
+    text-align: center;
+  }
+  
+  .topnav a:hover{
+    box-shadow: inset 100px 0 0 0 #F9F871;
+    color: black;
+  }
+  
+  .topnav b{
+    padding: 8px;
+    margin: 4px;
+    font-size: medium;
+    color: black;
+    float: left;
+  }
+  
+  .hero{
+    width: 100%;
+    height: 3cm;
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+  
+  }
+
+  .min{
+    background-color: #00c6c7;
+    width: 70%;
+    margin-top: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px dashed #F9F871;
+    color: white;
+
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  input[type=text], [type=email]{
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 1cm;
+    border-radius: 10px;
+    border: 3px solid #F9F871;
+    margin: 8px 0;
+  }
+
+  textarea{
+        width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid #F9F871;
+    margin: 8px 0;
+  }
+
+  label{
+    color: white;
+  }
+
+  .Back{
+    padding: 8px;
+    padding-top: 15px;
+    background-color: #009CCB;
+    border-radius: 50px;
+    width: 2cm;
+    height: 2cm;
+    text-align: center;
+    margin: 1cm;
+    float: right;
+    text-decoration: none;
+    position: relative;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    color: white;
+    aspect-ratio: 1;
+    outline: calc(10%/2) solid #0009;
+    outline-offset: calc(10%/-2);
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+    font-weight: bold;
+    font-size: 1cm;
+    }
+    
+    .Back:hover{
+    box-shadow: inset 2000px 0 0 0 #48D4AB;
+    color: black;
+    outline: 8px solid #81E496;
+    outline-offset: 8px;
+    }
+
+    input[type=submit]{
+        background-color:#48D4AB;
+        padding: 8px;
+        width: 10%;
+        border: 1px solid #F9F871;
+        border-radius: 10px;
+        margin-left: 90%;
+        cursor: pointer;
+        color: white;
+        margin-top: 10px;
+    }
+
+    input[type=submit]:hover{
+        background-color: #81E496;
+        color: black;
+        
+    }
+    
