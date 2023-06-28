@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih rumah makan 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RM.css">
+    </head>
+    <body>
+      <div class="hero">
+        <img src="foto_rm_parangkritis2/parangtritis5.jpg">
+            <div class="topnav">
+               <b><img src="logo ppw.png" height="25px" ></b>
+               <a href="contact.html">Contact Us</a>
+               <a href="about.html">About</a>
+               <a href="2_temp_dpn_yogya.html">Home</a>
+            </div>
+       </div>
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="foto_rm_parangkritis1/mangut1.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_parangkritis1/mangut2.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_parangkritis1/mangut3.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Mangut Lele Mbah Marto</h1>
+            <p>Mangut lele merupakan salah satu kuliner khas Yogyakarta.
+              Warung yang menjual hidangan mangut lele mudah ditemukan di daerah Bantul, Yogyakarta.
+              Sederhananya, mangut lele adalah hidangan ikan lele yang dimasak dengan kuah santan.
+              Umumnya ikan lele diolah dengan daun kemangi.
+              Nah, biasanya mangut lele dihidangkan dengan nasi hangat dan juga sambal, Adjarian.
+              O iya, sebenarnya bukan hanya ikan lele saja yang dapat diolah menjadi hidangan mangut.
+              Ikan air tawar lainnya, seperti wader dan kutuk sebenarnya juga bisa.
+              Hanya saja, yang paling umum memang ikan lele.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Tempat</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="foto_rm_parangkritis1/mangut4.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_parangkritis1/mangut5.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_parangkritis1/mangut6.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.7528090066567!2d110.34624461744384!3d-7.920868399999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5555da6468c7%3A0x136f34c76a24ec7d!2sMangut%20Lele%20Mbah%20Marto%20Patalan%20Jetis%20Bantul!5e0!3m2!1sen!2sid!4v1687782858158!5m2!1sen!2sid"  
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                      <h1>ULASAN</h1>
+                    <!-- Slideshow container -->
+                    <div class="con2">
+
+                    
+                      
+                          <!-- Full-width slides/quotes -->
+                          <div class="mySlides">
+                              <img src="parangkritis_foto/parangtritis4.jpg">
+                              <p class="author">- Eria</p>
+                            <q>Buat hahah lovers alias pecinta puedesss sih wajib kesini. Makanannya pedas dan enak, terkhusus mangut lelenya mantul. Gudegnya juga enak.
+                              Oh iya, usut punya usut tempat mangut lele mbah marto yg pertama tu udh sama anaknya. Jadi, si mbah pindah dan bikin lagi di sini. Pas makan kesana pun kebetulan si mbah nya ada..
+                              Sehat selalu njih mbah</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="parangkritis_foto/parangtritis6.jpeg">
+                              <p class="author">- Melia</p>
+                            <q>Makanan sangat enak dan original, tidak heran kalau memang menjadi salah satu makanan legendaris di Bantul. Konsep mengambil makanan sendiri dari dapur langsung membuat suasana nyaman seperti berada di rumah nenek. Menarik bisa melihat langsung bagaimana mangut lele diproses, dan jangan kaget karena sesekali asap dari dapur tercium saat kita makan. Harus dicoba bila sedang berkunjung ke Bantul Yogyakarta.</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="parangkritis_foto/parangtritis5.jpg">
+                              <p class="author">- Nur</p>
+                            <q>Wuiiih mangut lele ini maknyuss top markotob bagi yang suka pedas. Selain itu ada sambal goreng krecek juga mantab joss. Ada pilihan ayam kampung, baceman tahu dan opor juga. Jadi banyak pilihan buat yang gk makan lele. Harganya juga murah meriah.. Kalau mau bungkus mangut lele buat dirumah ads versi kalengan, tp kl mau yg segar jg cuma 25 rb utk 2 potong. Wajib dikunjungi kalau suka lele pedas. Sayang sekali gk ingat foto2, cm ambil gambar seadanya.</q><br>
+                          </div>
+                        
+                        
+       
+    </div>
+
+
+
+    <a href="r.parangkritis_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body>
+
+
+
+</html>

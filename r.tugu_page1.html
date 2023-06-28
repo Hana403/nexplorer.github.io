@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih rumah makan 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RM.css">
+    </head>
+    <body>
+      <div class="hero">
+        <img src="foto_rm_tugu 1/kebon7.JPG">
+            <div class="topnav">
+               <b><img src="logo ppw.png" height="25px" ></b>
+               <a href="contact.html">Contact Us</a>
+               <a href="about.html">About</a>
+               <a href="2_temp_dpn_yogya.html">Home</a>
+            </div>
+       </div>
+
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="foto_rm_tugu 1/kebon2.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_tugu 1/kebon3.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_tugu 1/kebon4.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Kebon Ndalem Coffee & Eatery</h1>
+            <p>Buatmu yang ingin nongkrong sambil menikmati keramaian Tugu Jogja, 
+              bisa datang ke Kebon Ndalem Coffee & Eatery. Kafe ini berada tepat di sebelah Tugu Jogja 
+              sehingga kamu bisa melihat keramaian pusat Kota Yogyakarta dengan begitu jelas. 
+              Apalagi jika kamu duduk di lantai dua maupun lantai tiganya. Sambil bersantai, 
+              kamu dapat menikmati aneka sajian khas kafe ini, seperti nasi bakar ayam kemangi 
+              hingga delish smoked beef.<br><br>
+              Kisaran harga hidangan di kafe ini Rp 25.000 - Rp 70.000. 
+              Untuk minuman tersedia aneka kopi, frape, jus, dan teh. Harganya mulai Rp 20.000-an. 
+              Lokasi Kebon Ndalem Coffee & Eatery ada di Jalan Pangeran Diponegoro Nomor 2, Gowongan, 
+              Kecamatan Jetis, Kota Yogyakarta. Jam buka kafenya setiap hari pukul 10.00-22.00 WIB.
+              </p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Tempat</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="foto_rm_tugu 1/kebon5.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_tugu 1/kebon6.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_tugu 1/kebon7.JPG">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0673021515922!2d110.36428907307607!3d-7.782689192237021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5925121fd78f%3A0x51c90a620eaad3be!2sKebon%20Ndalem%20Coffee%20%26%20Eatery!5e0!3m2!1sen!2sid!4v1687609519281!5m2!1sen!2sid" 
+           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                      <h1>ULASAN</h1>
+                    <!-- Slideshow container -->
+                    <div class="con2">
+
+
+                      
+                          <!-- Full-width slides/quotes -->
+                          <div class="mySlides">
+                              <img src="foto_rm_tugu 1/kebon5.jpg">
+                              <p class="author">Johan</p>
+                            <q>Lebih enak reservasi terlebih dahulu jika ingin makan disini, terutama pada waktu makan malam. Karena pada jam-jam tertentu akan sangat ramai dan sulit mendapatkan meja kecuali dibantu pramusaji.
+                              Pilihan menunya beragam, mulai dari jajanan ringan sampai makanan berat. Minuman sehat pun tersedia. Harganya cenderung agak mahal namun jika ingin mendapatkan pengalaman pada indra kecap, tidak salah lagi untuk datang kemari.
+                              Pelayanannya super ramah dan sat set. Tempatnya pun bersih. Untuk pembayaran bisa menggunakan tunai ataupun debit.</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="foto_rm_tugu 1/kebon2.jpg">
+                              <p class="author">Joha</p>
+                            <q>Sebagai turis,tertarik kesini karena terletak persis di depan tugu Jogja,berharap foto2 di lantai atas seperti yg sering lihat di medsos.
+                              Namun saat weekend ternyata lantai paling atas penuh dan ternyata sangat sempit ,panas walaupun malam hari,dan tidak nyaman.
+                              Lebih nyaman di lantai 1,di sini juga barista meracik kopinya,sehingga harum kopi di sini.
+                              Pelayanan sangat baik.
+                              Aneka juice nya enak,tidak terlalu manis,dan disajikan dengan gelas cantik.
+                              Kekurangan terbesar di area parkirnya.Cukup sempit,dan hingga 2 kali tukang parkir meminta kita memindahkan mobil.</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="foto_rm_tugu 1/kebon6.jpg">
+                              <p class="author">Jen</p>
+                            <q>Tempatnya sih enak untuk nongkrong, apalagi dapat view langsung mengarah ke tugu. Tempatnya juga lumayan luas, tapi tidak terlalu besar. Pelayanannya cukup, mungkin karna ramai jd kadang ada miss sama pelayannya. Rasanya juga sebenarnya standar ya, karna sepertinya view yang dijual.</q><br>
+                          </div>
+                        
+                          
+       
+    </div>
+
+
+
+    <a href="r.tugu_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body>
+
+
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih rumah makan 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RM.css">
+    </head>
+    <body>
+      <div class="hero">
+        <img src="foto_rm_parangkritis1/parangtritis5.jpg">
+            <div class="topnav">
+               <b><img src="logo ppw.png" height="25px" ></b>
+               <a href="contact.html">Contact Us</a>
+               <a href="about.html">About</a>
+               <a href="2_temp_dpn_yogya.html">Home</a>
+            </div>
+       </div>
+
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="foto_rm_parangkritis2/klathak1.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_parangkritis2/klathak2.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_parangkritis2/klathak4.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Sate Klathak Pak Pong</h1>
+            <p>Sate Klatak Pak Pong terkenal unik karena tampilannya yang berbeda. Sate klatak adalah sate yang terbuat dari daging kambing muda yang dibakar dengan tusukan kambing yang berbeda dari biasanya. Jika biasanya sate kambing memakai tusukan bambu sedangkan sate klatak di sini menggunakan jeruji sepeda. Tusukan ini memiliki maksud dan tujuan tersendiri, karena sate klatak memiliki ukuran daging yang lebih besar dari biasanya maka tusukan ini bertujuan untuk membuat sate matang hingga ke dalam. Jadi Anda tidak perlu khawatir jika dagingnya tidak matang.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Tempat</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="foto_rm_parangkritis2/klathak3.JPG">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_parangkritis2/klathak5.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_parangkritis2/klathak6.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.2275503239475!2d110.38493367307744!3d-7.87124179215091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a56854a9b3e95%3A0xdbe6f91fd89db72e!2sSate%20Klathak%20Pak%20Pong%20Pusat!5e0!3m2!1sen!2sid!4v1687784037830!5m2!1sen!2sid" 
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+                      <h1>ULASAN</h1>
+                    <!-- Slideshow container -->
+                    <div class="con2">
+
+                    
+                      
+                          <!-- Full-width slides/quotes -->
+                          <div class="mySlides">
+                              <img src="parangkritis_foto/parangtritis2.jpg">
+                              <p class="author">- Jenni</p>
+                            <q>Saat pertama kali kesini masih sepi belum seramai sekarang. Tp kok menurut saya, makin lama kualitasnya menurun ya?
+                              Rasa bumbu nya tidak seenak dulu. Skrg kurang recommended datang kesini ketika lg laper2nya. Antri nyaaaaa MasyaAllah. Saya terakhir ini antrinya sampe 2jam dapet antrian nomer 71. Tp untuk tempatnya skrg makin luas. Ada minimarket juga. Tapi kayaknya udah ga ada tempat mainan/ayunan buat anak2 ya skrg? Jadi kesini sesekali aja kalau lagi pengen makan sate pakpong, karna memang pny ciri khas rasa sate sendiri sih. Klo untuk harga ya realtif ga murah tp ya ga mahal juga.</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="parangkritis_foto/parangtritis3.jpg">
+                              <p class="author">- Anisa</p>
+                            <q>Lokasinya di pinggir jalan besar, area parkir luas dan banyak petugas yg membantu parkir serta menyebrang jalan. Ada tempat duduk yang seperti saung saung di pinggir rumput2. Rasa satenya enaaakkk, sate klathak ter enak yg pernah saya cobaa. 1 porsi 2 tusuk besar2 jadi kenyang! Saya juga coba gulainya, enak dan porsinya pas. Namun agak lamaa penyajiannya mungkin karena ramai. Akan balik ke sini lagi kalau ke Jogjaa!</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="parangkritis_foto/parangtritis4.jpg">
+                              <p class="author">- Abdul</p>
+                            <q>Sekarang manajemen antriannya sudah lebih baik, makanan datang sekitar 40 menit setelah pesan walaupun di akhir pekan. Satenya empuk dan tidak bau kambing. Dagingnya tebal tapi sepertinya kurang lama dipanggang. Kronyosnya enak sekali tapi dapat beberapa potong yang alot, tidak bisa ditelan. Ada gedung baru yang tampilannya bersih dan bagus.</q><br>
+                          </div>
+                        
+       
+    </div>
+
+
+
+    <a href="r.parangkritis_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+    </body>
+

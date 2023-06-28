@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih rumah makan 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RM.css">
+    </head>
+    <body>
+      <div class="hero">
+        <img src="foto_rm_merapi2/tengkleng5.jpg">
+            <div class="topnav">
+               <b><img src="logo ppw.png" height="25px" ></b>
+               <a href="contact.html">Contact Us</a>
+               <a href="about.html">About</a>
+               <a href="2_temp_dpn_yogya.html">Home</a>
+            </div>
+       </div>
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="foto_rm_merapi2/tengkleng1.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_merapi2/tengkleng2.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_merapi2/tengkleng3.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Tengkleng Gajah</h1>
+            <p>Tengkleng Gajah adalah salah satu hidangan khas Yogyakarta yang terkenal dengan cita rasa kaldunya yang lezat. Tengkleng Gajah merupakan olahan daging kambing yang dimasak dengan bumbu rempah-rempah khas, seperti serai, daun jeruk, jahe, kunyit, dan cabai. Hidangan ini biasanya disajikan dalam mangkuk dengan kuah yang kental dan berwarna kecoklatan.
+
+              Tengkleng Gajah memiliki tekstur daging yang empuk dan kuah yang kaya akan rasa. Kuahnya memiliki cita rasa yang gurih dan sedikit pedas, sehingga sangat cocok bagi pecinta masakan pedas. Dalam hidangannya, terdapat potongan daging kambing yang telah direbus hingga empuk dan bumbu-bumbu yang memberikan aroma yang menggugah selera.
+              
+              Biasanya, Tengkleng Gajah disajikan dengan nasi putih hangat dan dilengkapi dengan pelengkap seperti sambal terasi, irisan cabai rawit, dan jeruk nipis. Makanan ini sangat populer di Yogyakarta dan menjadi pilihan yang tepat bagi mereka yang ingin menikmati hidangan tradisional dengan cita rasa khas daerah.
+              
+              Tengkleng Gajah dapat ditemukan di berbagai warung makan atau rumah makan yang menyajikan masakan khas Yogyakarta. Hidangan ini menjadi favorit bagi wisatawan maupun penduduk lokal yang ingin mencicipi kuliner khas daerah dengan cita rasa yang autentik.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Tempat</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="foto_rm_merapi2/tengkleng4.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_merapi2/tengkleng5.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_merapi2/tengkleng6.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.562299800226!2d110.4026920730753!3d-7.73001899228823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59107b02f4d3%3A0x9003e13feec0e1fa!2sTengkleng%20Gajah!5e0!3m2!1sen!2sid!4v1687744234296!5m2!1sen!2sid"
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                      <h1>ULASAN</h1>
+                    <!-- Slideshow container -->
+                    <div class="con2">
+
+                
+                      
+                          <!-- Full-width slides/quotes -->
+                          <div class="mySlides">
+                              <img src="merapi_foto/merapi7.jpg">
+                              <p class="author">- Tara</p>
+                            <q>Tempatnya besar dan luas begitu juga dengan area parkir mobilnya. Untuk harga memang diatas rata-rata  dengan yang lainnya tapi disini porsinya memang banyak. Nasi kita yang ambil sendiri. Rasa masakan OK tidak mengecewakan. Pelayanannya ramah tidak pakai lama meskipun pengunjungnya pada saat itu lumayan ramai. Untuk yang berwisata/berlibur di Jogja atau Sleman sekitarnya, patut mencoba untuk datang kesini.</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="merapi_foto/merapi7.jpg">
+                              <p class="author">- Hans</p>
+                            <q>Tertarik makan disini karena melihat iklan di IG. Waktu makan siang cukup ramai, datang langsung pilih menu tengkleng original dan nasi goreng kambing. Sambil pesen menu, sebaiknya anggota keluarga yang lain sambil pesan tempat.
+                              Untuk suasana serame itu, pelayanan tergolong cepat.
+                              Untuk rasa tengkleng original, meskipun dagingnya empuk banget tapi untuk rasa mohon maaf bagi saya B aja.
+                              Kalau untuk nasi goreng kambingnya malah yang menurut saya juara, rasanya enak, daging kambingnya juga tidak pelit.
+                              Makan sambil ditemani live music dg vokal yg keren, pengunjung juga bisa ikut nyanyi or request lagu..
+                              Overall cukup OK</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="merapi_foto/merapi8.jpeg">
+                              <p class="author">- Alya</p>
+                            <q>Porsinya besar, jadi kalau nggak biasa makan banyak mending pesan buat makan tengah aja jadi bisa saling share. Yg tengkleng original dan gulenya enak. Nasi putihnya ambil sendiri dan sepuasnya. Mantabbb.</q><br>
+                          </div>
+                        
+                         
+       
+    </div>
+
+
+
+    <a href="r.merapi_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body>
+

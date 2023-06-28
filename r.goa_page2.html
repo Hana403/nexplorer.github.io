@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih rumah makan 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RM.css">
+    </head>
+    <body>
+      <div class="hero">
+        <img src="foto_rm_goa2/omah8.jpg">
+            <div class="topnav">
+               <b><img src="logo ppw.png" height="25px" ></b>
+               <a href="contact.html">Contact Us</a>
+               <a href="about.html">About</a>
+               <a href="2_temp_dpn_yogya.html">Home</a>
+            </div>
+       </div>
+
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="foto_rm_goa2/omah1.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_goa2/omah2.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_goa2/omah3.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Tempat makan</h1>
+            <p>Omah Kampoeng Emas merupakan sebuah tempat makan yang terletak di tengah persawahan. Berbentuk sebuah pendopo besar bertingkat, di mana lantai 1 menjadi perpustakaan dan lantai dua merupakan tempat makan. Suasana yang sejuk membuat konsumen nyaman saat sedang berada di sana. Yang membedakan tempat makan ini dengan tempat makan lain adalah, tempat makan ini hanya akan menyediakan menu masakan bagi konsumen yang lebih dulu memesan. Tempat makan ini tidak menyediakan menu reguler yang disediakan setiap harinya.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Tempat</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="foto_rm_goa2/omah4.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_goa2/omah5.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_goa2/omah7.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.1652033151872!2d110.61510997307902!3d-7.981868592043446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7bb4827b3bdd63%3A0x4b52865e35b84a10!2sOmah%20Kampoeng%20Kuliner%20Gunungkidul%20(%20Rest%20Area%20%26%20Transit%20)!5e0!3m2!1sen!2sid!4v1687792236298!5m2!1sen!2sid" 
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                      <h1>ULASAN</h1>
+                    <!-- Slideshow container -->
+                    <div class="con2">
+
+
+                      
+                          <!-- Full-width slides/quotes -->
+                          <div class="mySlides">
+                              <img src="Tugu_putih.png">
+                              <p class="author">- Setyo</p>
+                            <q>Tempatnya asik, luas, nyaman, bisa lesehan untuk santai, tersedia juga meja dan kursi kalo males lepas sepatu/sandal, cocok untuk makan bareng keluarga, teman, maupun relasi...makanannya enak, tapi untuk beberapa menu minuman kosong, jadi agak kecewa 😌, untuk pelayanan oke, ramah👍</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="Tugu_putih.png">
+                              <p class="author">- Roma</p>
+                            <q>Berada persis di tepi jalan utama wonosari-semanu, rumah makan ini menyajikan masakan dgn menu tradisional.
+                              Tempatnya luas dan cukup nyaman.
+                              Ada pilihan untuk duduk lesehan juga.
+                              Cocok untuk rombongan besar karena tempat duduknya banyak.
+                              Ada ayunan dan jungkat-jungkit untuk mainan anak-anak.
+                              Rasa masakannya cukup lumayan dan harganya relatif terjangkau.
+                              Area parkir cukup luas bisa menampung beberapa bus besar.
+                              Ada spot-spot untuk berfoto.</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="Tugu_putih.png">
+                              <p class="author">- Nindi</p>
+                            <q>Resto dengan konsep tradisional. Menu masakan jawa khas Gunungkidul. Nasi merah, sayur lombok, lauk semur daging, ayam bacem, tahu dan tempe bacem, dll. Menu lain juga banyak dan variatif. Lokasi strategis, parkir luas. Nyaman buat kumpul-kumpul.e</q><br>
+                          </div>
+                        
+                         
+       
+    </div>
+
+
+
+    <a href="r.goa_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body>
+

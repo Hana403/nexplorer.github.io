@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih rumah makan 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RM.css">
+    </head>
+    <body>
+      <div class="hero">
+        <img src="foto_rm_waduk1/pari1.jpg">
+            <div class="topnav">
+               <b><img src="logo ppw.png" height="25px" ></b>
+               <a href="contact.html">Contact Us</a>
+               <a href="about.html">About</a>
+               <a href="2_temp_dpn_yogya.html">Home</a>
+            </div>
+          </div>
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="foto_rm_waduk1/pari1.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_waduk1/pari2.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_waduk1/pari3.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Kedai Kopi Pari</h1>
+            <p>Untuk bisa sampai di Kedai Warung Kopi Pari, kalian harus rela memasuki lereng Bukit Menoreh. Perjalanan yang terjal membuat kalian harus bersabar saat perjalanan. Namun jauhnya perjalanan serasa terbayarkan dengan pemandangan bukit yang indah di sekitar warung. Dengan lokasi yang nyentrik ini, tentunya akan membuat kalian lebih nikmat saat berkuliner dengan ditemani pemandangan yang indah. Selain itu, kalian bisa mengambil gambar dengan latar belakang alam yang sangat asri. Lereng Bukit Menoreh tempat warung ini merupakan lokasi yang sama tempat Wisata Sungai Mudal. Kalian bisa sekaligus melanjutkan perjalanan wisata kalian ke Sungai Mudal jika mengunjungi warung ini.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Tempat</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="foto_rm_waduk1/pari5.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_waduk1/pari6.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_waduk1/pari7.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126504.40276710728!2d110.03825863906249!3d-7.761952399999989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7aee369d53ef05%3A0x7d09b4b354a9e77a!2sKedai%20Kopi%20Pari!5e0!3m2!1sen!2sid!4v1687797260797!5m2!1sen!2sid" 
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                      <h1>ULASAN</h1>
+                    <!-- Slideshow container -->
+                    <div class="con2">
+                      
+                          <!-- Full-width slides/quotes -->
+                          <div class="mySlides">
+                              <img src="waduk_foto/waduk4.jpg">
+                              <p class="author">- Beny</p>
+                            <q>Suasana perkopian di daerah pegunungan. Tempatnya nyaman adem, walau di dekat jalan tp gak berisik. Pelayanan ramah. Ada wifinya. Tempatnya estetik. Sering menjadi lokasi anak motor untuk sekadar mampir beristirahat. 😁</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="waduk_foto/waduk6.jpg">
+                              <p class="author">- Bagus</p>
+                            <q>Kopinya mantap, kulupannya enak.
+                              Suasananya juga nyaman, adem dan bikin betah.
+                              Viewnya emang juara sih, suasana yg adem pas banget klo dinikmati dgn wedang kopi dan mendoan lg anget² kyk pelukan tetangga.
+                              Kesini pas cuaca agak² mendung manja, pas wes...
+                              Seketika lupa akan masalah kerjaan dan cicilan. Hahahahahahahah</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="waduk_foto/waduk7.jpg">
+                              <p class="author">- Erma</p>
+                            <q>Beberapa kali lewat sini, kemarin menyempatkan mampir.
+                              Masih pagi jam 9 jd masih sepi. Disambut pak parkir yg sangat ramah, pelayan juga ramah.
+                              Ada menu prasmanan dengan hidangan khas desa (lodeh, oseng kacang, tempe garit dll). Minuman ada aneka kopi dan teh, dan aneka cemilan, yang khas kulon progo ya jelas geblek.
+                              Sajian enak dan gak nunggu lama. Harga jg cukup murah. Tempat tidak terlalu luas. Area belakang sebenernya ada tempat lagi tapi sepertinya lama tidak terpakai. Ada toilet dan mushola.</q><br>
+                          </div>
+                        
+                        
+       
+    </div>
+
+
+
+    <a href="r.waduk_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body>
+
+
+
+</html>

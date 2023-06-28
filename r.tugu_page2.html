@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih rumah makan 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RM.css">
+    </head>
+    <body>
+      <div class="hero">
+        <img src="foto_rm_tugu 1/sotosampah1.jpg">
+            <div class="topnav">
+               <b><img src="logo ppw.png" height="25px" ></b>
+               <a href="contact.html">Contact Us</a>
+               <a href="about.html">About</a>
+               <a href="2_temp_dpn_yogya.html">Home</a>
+            </div>
+       </div>
+
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="foto_rm_tugu 2/sotosampah6.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_tugu 2/sotosampah2.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_tugu 2/soto sampah3.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Soto sampah Jogja</h1>
+            <p>Soto sampah Jogja ini sudah populer sejak tahun 1970, bahkan ada juga yang menyebutnya sejak 1967. Nama awal muncul sebenarnya bukan itu. Akan tetapi soto Simak atau soto becak. Disebut demikian lantaran awalnya para pembelinya adalah para bapak-bapak tukang becak.
+              Hingga pada tahun 2009, menjadi semakin terkenal. Usut punya usut ternyata penamaan tersebut adalah julukan dari para pembelinya. Penggunaan gajih sapi membuat penampakan soto ini terkesan berantakan. sehingga muncullah nama julukan tersebut.
+              </p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Tempat</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="foto_rm_tugu 2/sotosampah4.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_tugu 2/sotosampah5.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_tugu 2/sotosampah6.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0773658617927!2d110.36436597307598!3d-7.781621892238024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a58309d8d93a5%3A0xcf08db25c2460f04!2sSoto%20Sampah!5e0!3m2!1sen!2sid!4v1687611278307!5m2!1sen!2sid"
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+<h1>ULASAN</h1>
+                    <!-- Slideshow container -->
+                    <div class="con2">
+                      
+                      
+                          <!-- Full-width slides/quotes -->
+                          <div class="mySlides">
+                              <img src="foto_rm_tugu 2/sotosampah1.jpg">
+                              <p class="author">baybeh</p>
+                            <q>Soto Sampah Jogja, soto bening, seger dan anget pas di makan malam hari/dini hari. 
+                              Dengan harga yang sangat terjangkau dan bernagai variant topping. Recommend banget, 
+                              utk kaliam yang cari mkanan hangat, porsi cukupan, utk yg mkan bnyak harus beli 2 porsi 😁. 
+                              Tpi di jamin ga bikin kantong bolong, Ambil varian tusukkan seperti tahu bacem, sate kulit dll 
+                              juga harganya tidak mahal. </q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="foto_rm_tugu 2/sotosampah5.jpg">
+                              <p class="author">shanthi</p>
+                            <q>Salah satu pilihan kuliner di Kota Yogyakarta kususnya dekat dengan tugu Yogyakarta. 
+                              Untuk rasanya pas dengan lidah orang jawa, untuk kuah nya terasa rempah rempahnya. 
+                              Walaupun di pinggir jalan namun tempatnya bersih, awalnya saya mengira soto sampah 
+                              dekat dengan pembuangan sampah. Namun kenyataanya berbeda dan tidak dekat dengan sampah. 
+                              Untuk pemadangan saat menikmati makan adalah lalu lalang kendaraan dan para pejalan kaki. 
+                              Untuk harga terjangkau.</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="foto_rm_tugu 2/sotosampah6.jpg">
+                              <p class="author">san</p>
+                            <q>Iseng sarapan di sini karena namanya unik dan katanya merupakan salah satu warung soto legend di Jogja. 
+                              Lokasinya ada di deket Pasar Kranggan dan Tugu. Waktu itu datang jam 7 lebih belum ready, jadi kami nunggu beberapa menit.
+
+                              Akhirnya kami ambil gorengan dulu. Pilihannya cukup banyak, tinggal ambil di grobak sotonya. 
+                              Setelah soto dateng, kami coba, hmm standar si rasanya seperti soto kebanyakan.
+                           </q><br>
+                          </div>
+                        
+
+    </div>
+
+
+
+    <a href="r.tugu_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body>
+

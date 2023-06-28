@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih hotel 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hotel.css">
+    </head>
+    <body>
+        <div class="hero">
+            <img src="waduk_hotel 1/hotel1.jpg">
+                <div class="topnav">
+                   <b><img src="logo ppw.png" height="25px" ></b>
+                   <a href="contact.html">Contact Us</a>
+                   <a href="about.html">About</a>
+                   <a href="2_temp_dpn_yogya.html">Home</a>
+                </div>
+           </div>
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="waduk_hotel 1/hotel2.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="waduk_hotel 1/hotel2.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="waduk_hotel 1/hotel3.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>ibis Yogyakarta International Airport Kulon Progo</h1>
+            <p>ibis Yogyakarta International Airport Kulon Progo adalah hotel Accor pertama di Kulon Progo, Daerah Istimewa Yogyakarta. Memiliki 216 kamar, ruang pertemuan, restoran buka sepanjang hari, spa, serta pojok web. Berlokasi strategis dekat Bandara Internasion al Yogyakarta, serta memiliki pemandangan indah Pantai Glagah yang memukau dan Bukit Menoreh yang menakjubkan. Tersedia beragam hidangan lokal dan tempat liburan untuk menjelajahi Pantai Glagah, Mangrove Jembatan Api-Api, Waduk Sermo, serta Kalibiru.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Dalam Hotel</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="waduk_hotel 1/hotel4.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="waduk_hotel 1/hotel6.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="waduk_hotel 1/hotel7.jpeg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0788519623625!2d110.07053781744385!3d-7.886819199999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7ae54f68850075%3A0x86d2f0664d4b6aae!2sibis%20Yogyakarta%20International%20Airport%20Kulon%20Progo!5e0!3m2!1sen!2sid!4v1687798872352!5m2!1sen!2sid" 
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                                <h1>ULASAN</h1>
+                            <!-- Slideshow container -->
+                            <div class="con2">
+
+                                
+                                    <!-- Full-width slides/quotes -->
+                                    <div class="mySlides">
+                                        <img src="waduk_foto/waduk4.jpg">
+                                        <p class="author">- Yulia</p>
+                                      <q>Pengalaman menginap pertama kali disini. Suasana hotel sangat nyaman dan bersih. Pelayanan seluruh staf juga sangat baik. Tadi pagi sarapan di resto, menu makanan sangat bervariasi dan fresh. Td sempat berkenalan dgn salah satu staf yg bernama Mas Nando. Orangnya sangat ramah dan sangat membantu sekali kepada kami saat kami menikmati sarapan.
+                                        Kondisi kamar yg kami tempati sangat bersih dan nyaman. Cukup memuaskam.</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="waduk_foto/waduk5.jpg">
+                                        <p class="author">- Okta</p>
+                                      <q>Pilihan hotel ternyaman selama pulang kampung, karena bawa anak bayi jadi lebih nyaman menginap di hotel. Hotel baru dan dekat sekali dengan bandara, breakfast bervariasi dan dengan pemandangan gunung dan sawah.
+                                        Big applause untuk staff nya yang ramah dan helpful, Trimakasih Mbak Tia dan Pak (saya lupa namanya) yg sudah memperkenalkan saya aplikasi Accor All, saya puas sekali booking hotel dengan aplikasi itu.
+                                        Dan terimakasih Mas Fernando atas keramahan selama breakfast.
+                                        Pokonya setiap pulang kampung, saya menginap di hotel ini lagi.</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="waduk_foto/waduk6.jpg">
+                                        <p class="author">- Keino</p>
+                                      <q>Untuk hotel nya bagus bersih, hotel baru namun disayangkan untuk peralatan mandi harus request terlebih dahulu, tidak ad kolam renang nya.
+                                        Di restaurant bagus pemandangan bagus pelayanan bagus specially Linda, salah satu staff yang ramah, humble , diajak ngobrol, Untuk menu BF kurang bervariasi mungkin suatu saat bisa di perbaiki tidak monoton seperti ini terus. Besok bakal menginap disini lagi.</q><br>
+                                    </div>
+                                  
+                                   
+    </div>
+
+
+    <a href="h.waduk_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body> 
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih rumah makan 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RM.css">
+    </head>
+    <body>
+      <div class="hero">
+        <img src="foto_rm_gembira2/IMG_20190928_133916.jpg">
+            <div class="topnav">
+               <b><img src="logo ppw.png" height="25px" ></b>
+               <a href="contact.html">Contact Us</a>
+               <a href="about.html">About</a>
+               <a href="2_temp_dpn_yogya.html">Home</a>
+            </div>
+       </div>
+
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="foto_rm_gembira2/2017-09-30.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_gembira2/Ayam bakar.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_gembira2/Ayam-utuh-ed-s.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Ayam Panggang 3 Berku</h1>
+            <p>Ayam Panggang 3 Berku menyajikan olahan ayam panggang khas Klaten dengan cita rasa yang berbeda. 
+              Penggunaan santan kental sebagai olesan ketika ayam dipanggang membuat ayam jadi gurih dan beraroma sedap. Biasanya, 
+              ayam panggang ini disajikan bersama sambal hijau ataupun sambal mentah lengkap dengan lalapannya. Selain ayam bakar, 
+              rumah makan yang berada tak jauh dari Kebun Binatang Gembira Loka ini pun menyediakan ayam goreng, bebek, 
+              gurame dan lele yang dipanggang ataupun digoreng. 
+              Selain dapat datang langsung ke tempat makan ini, kita juga dapat memanfaatkan layanan pesan antarnya.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Tempat</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="foto_rm_gembira2/335_509891106.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_gembira2/ayam-bakar-3-berku.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_gembira2/Ayam-Panggang-3-Berku-491x280.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7905.7689223851785!2d110.38717087771!3d-7.802054999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5765cdb595d7%3A0x552e3728f6161c21!2sRumah%20Makan%20Ayam%20Panggang%20%22Tiga%203%20Berku%22!5e0!3m2!1sen!2sid!4v1687179334774!5m2!1sen!2sid" width="80%" height="450" 
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+
+        <h1>ULASAN</h1>
+                    <div class="con2">
+
+                          <!-- Full-width slides/quotes -->
+                          <div class="mySlides">
+                              <img src="foto_rm_gembira2/3berku3.jpg">
+                              <p class="author">Asteria Agusti Rani</p>
+                            <q>Good food, with specialty in roasted chicken. It's savory with a but of sweetness. The coconut drink was good as well. The space is quite traditional, with big tables and wooden chair. It's good for family and group of friends. However, the parking lot is limited, for 2 cars and a few motorbikes. You'll have to park on the street when it's full and walk a few meters. 
+                              For smoker: the entire area is a non-smoking area, you have to go outside if you want to smoke</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="foto_rm_gembira2/335_509891106.jpg">
+                              <p class="author">Hairy Yusuf</p>
+                            <q>This restaurant is clean. It has many tables, suitable for family. It has wastafel and clean toilet. It also provides snacks. It has no air-conditioner 
+                              but don't worry it has many windows so it's cool inside. The parking lot is enough for some motorcycles and 3 cars.</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="foto_rm_gembira2/90037977__hGCUpKQlMT9_G2JFRIgDtY18BDsNWC8jxEHSYjwuZ8.jpg">
+                              <p class="author">Sigid Nugroho</p>
+                            <q>It's actually one of the Jogja legendary cuisine. 
+                              The grilled chicken is their trademark but you should also definitely try their fried chicken.
+                              Delicious.
+                              </q><br>
+                          </div>
+                        
+                        </div>
+                        
+                      
+       
+    </div>
+
+
+
+    <a href="r.gembira_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+  </a>
+    </body>
+

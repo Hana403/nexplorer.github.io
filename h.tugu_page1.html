@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih hotel 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hotel.css">
+    </head>
+    <body>
+        <div class="hero">
+            <img src="foto_hotel_tugu 1/hotel13.jpg">
+                <div class="topnav">
+                   <b><img src="logo ppw.png" height="25px" ></b>
+                   <a href="contact.html">Contact Us</a>
+                   <a href="about.html">About</a>
+                   <a href="2_temp_dpn_yogya.html">Home</a>
+                </div>
+           </div>
+
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="foto_hotel_tugu 1/hotel12.jpeg">
+            </div>        
+            <div class="image fade">
+            <img src="foto_hotel_tugu 1/hotel13.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="foto_hotel_tugu 1/hotel14.jpeg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>THE 1O1 Yogyakarta Tugu</h1>
+            <p>THE 1O1 Yogyakarta Tugu terletak strategis hanya 5 menit jalan kaki dari Jalan Malioboro, 
+              menawarkan kamar-kamar dengan beragam fasilitas modern dan akses WiFi gratis. Kamar-kamarnya 
+              yang stylish dilengkapi AC, TV kabel layar datar, dan ketel listrik. Kamar juga memiliki minibar, 
+              area untuk duduk bersantai, dan brankas. Kamar mandi pribadinya menyediakan shower, pengering rambut, 
+              dan perlengkapan mandi gratis.
+            </p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Dalam Hotel</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="foto_hotel_tugu 1/hotel15.jpeg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_hotel_tugu 1/hotel16.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_hotel_tugu 1/hotel17.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.053584330766!2d110.36420637307612!3d-7.784143792235582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a582ff893cce3%3A0x8bf559a1e440274!2sTHE%201O1%20Yogyakarta%20Tugu!5e0!3m2!1sen!2sid!4v1687612508465!5m2!1sen!2sid"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+    <h1>ULASAN</h1>
+                            <!-- Slideshow container -->
+                            <div class="con2">
+                            
+                          
+                                
+                                    <!-- Full-width slides/quotes -->
+                                    <div class="mySlides">
+                                        <img src="foto_hotel_tugu 1/hotel16.jpg">
+                                        <p class="author">JEJE</p>
+                                      <q>Pelayanan istimewa di kota istimewa, ramah dan nyaman, hotel dijantung kota yogyakarta bintang 4 view sebagus dan sekeren ini.
+                                        Staf resto sangat friendly, pelayanan yang cekatan dan langsung ditawarkan utk minuman yg recommended di hotel ini dan tdk usah khawatir utk bingung pilih2 menu.
+                                        Bar yang ada di kolam renang keren dari mulai masuk ke resto hingga ke pool. (Mas yosi dan Mbak anisa)
+                                        Terimakasih sudah melayani dengan baik, kapan kapan kembali lagi 😍</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="foto_hotel_tugu 1/hotel15.jpeg">
+                                        <p class="author">Andi</p>
+                                      <q>Lokasi hotelnya bagus, di tengah kota, benar2 dekat dengan khas kota jogja yaitu Tugu, dekat juga dengan malioboro.
+                                        View balcony juga keren karena bisa liat tugu yogya dari atas, liat arah merapi.
+                                        Untuk luas kamar memang agak kecil ya, tidak terlalu luas, tapi secara umum cukup nyaman.
+                                        </q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="foto_hotel_tugu 1/hotel14.jpeg">
+                                        <p class="author">Ana</p>
+                                      <q>kamarnya oke, kolam renang nya jugaa lebar dan baguss, sarapannyan menunya berfariatif, cocok untuk keluargaa, pelayananyya superrrrr.... dekat dengan tuguuu pokoknya menginap dan breakfastnyaa sngat berkesan thanks mas sofyan udh diambilin kopiii....</q><br>
+                                    </div>
+                                  
+
+    </div>
+
+
+    <a href="h.tugu_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body> 
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih rumah makan 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RM.css">
+    </head>
+    <body>
+      <div class="hero">
+        <img src="foto_rm_waduk2/ayam3.jpg">
+            <div class="topnav">
+               <b><img src="logo ppw.png" height="25px" ></b>
+               <a href="contact.html">Contact Us</a>
+               <a href="about.html">About</a>
+               <a href="2_temp_dpn_yogya.html">Home</a>
+            </div>
+       </div>
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="foto_rm_waduk2/ayam1.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_waduk2/ayam2.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_waduk2/ayam3.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Ayam Goreng BU HARTIN</h1>
+            <p>Ayam goreng menjadi menu andalan Rumah Makan Bu Hartin. Sekilas memang terdengar biasa bukan, namun jangan salah. Ayam goreng kampung ini tidak sama dengan ayam goreng kebanyakan. Salah satu keunikan ayam kampung goreng di sini adalah menggunakan resep khusus yang sudah diwariskan turun-menurun dan tentunya sangat rahasia. Keunikan lainnya adalah cara memasak yang benar-benar memperhatikan kualitas dan citarasa,  anda tidak perlu khawatir daging ayam goreng yang anda beli terasa alot.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Tempat</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="foto_rm_waduk2/ayam4.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_waduk2/ayam5.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_waduk2/ayam6.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31617.45962092859!2d110.12623910372307!3d-7.875969392040891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7afb14989207b3%3A0x99deed1a37f02f76!2sAyam%20Goreng%20BU%20HARTIN%20Resto%20%26%20Music!5e0!3m2!1sen!2sid!4v1687797951559!5m2!1sen!2sid"
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                      <h1>ULASAN</h1>
+                    <!-- Slideshow container -->
+                    <div class="con2">
+
+                      
+                          <!-- Full-width slides/quotes -->
+                          <div class="mySlides">
+                              <img src="waduk_foto/waduk3.jpg">
+                              <p class="author">- Sera</p>
+                            <q>Tempat oke. Ada nuansa alam nya dg kolam kecil d sisi kanan dn kiri. Banyak tanaman hidup ny. Toilet bersih. Makanan lumayan enak. Kalau minuman b saja.
+
+                              Overall bolehlah dicoba buat singgah kalo
+                              Lapar.
+                              
+                              Sukses selalu.</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="waduk_foto/waduk7.jpg">
+                              <p class="author">- Tito</p>
+                            <q>Mantabss ayam gorengnya... secara umumnya menu2 yg disajikan oke... tempat dan suasananya nyaman... harganya juga cukup terjangkau... tempatnya luas, bisa utk rombongan, kami bersama keluarga dan tetangga 60 an orang tetap terlayani dg baik...</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="waduk_foto/waduk4.jpg">
+                              <p class="author">- Budi</p>
+                            <q>Restauran Ayam Goreng BU HARTIN ini bukan hanya menawarkan citarasa aneka masakannya saja namun juga menyuguhkan nuansa yang menyenangkan, konsep bangunan Jawa yaitu Joglo dan limasan dengan material alam yang menonjol juga ada kolam ikan didalamnya dipadu dengan berbagai tanaman menjadikan restauran ini sejuk dan asri juga ada panggung untuk live music pelengkapnya. fasilitas penunjang lainnya yaitu musholla dan toilet yang memadai. tempat ini mudah dijangkau karena berada di samping jalan Nasional Jogjakarta Wates tempat parkirnya juga luas</q><br>
+                          </div>
+                        
+                        
+       
+    </div>
+
+
+
+    <a href="r.waduk_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body>
+

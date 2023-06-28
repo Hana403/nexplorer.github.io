@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih hotel 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hotel.css">
+    </head>
+    <body>
+        <div class="hero">
+            <img src="parangkritis_hotel 1/parangtritis5.jpg">
+                <div class="topnav">
+                   <b><img src="logo ppw.png" height="25px" ></b>
+                   <a href="contact.html">Contact Us</a>
+                   <a href="about.html">About</a>
+                   <a href="2_temp_dpn_yogya.html">Home</a>
+                </div>
+           </div>
+
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="parangkritis_hotel 1/hotel1.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="parangkritis_hotel 1/hotel2.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="parangkritis_hotel 1/hotel3.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Adinda Hotel</h1>
+            <p>Adinda Beach Hotel dan Villa berada di Kawasan Parangtritis. Menyuguhkan nuansa gunung dan panorama pantai. Aman, nyaman, dan bersih adalah suasana yang akan didapat wisatawan dengan orang-orang tercintanya.  Dengan harga terjangkau, wisatawan dapat menikmati fasilitas AC, TV, air panas, dan sarapan. Anda ingin bermain ke pantai? dari Adinda Hotel hanya 700m. Tersedia 30 kamar.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Dalam Hotel</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="parangkritis_hotel 1/hotel4.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="parangkritis_hotel 1/hotel5.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="parangkritis_hotel 1/hotel6.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126425.27955110109!2d110.25297543906248!3d-8.02057929999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a55fed76c8c8b%3A0x3973429da81ca5b9!2sAdinda%20Hotel!5e0!3m2!1sen!2sid!4v1687785071504!5m2!1sen!2sid" 
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                                <h1>ULASAN</h1>
+                            <!-- Slideshow container -->
+                            <div class="con2">
+
+                                
+                                    <!-- Full-width slides/quotes -->
+                                    <div class="mySlides">
+                                        <img src="parangkritis_foto/parangtritis1.jpg">
+                                        <p class="author">- Chipa</p>
+                                      <q>Untuk hotel budget lumayan, pemandangan dari kamar oke. Walaupun fasilitas kamar mandi minim dan tv kamar ga ada yg bisa hidup.</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="parangkritis_foto/parangtritis2.jpg">
+                                        <p class="author">- Nafilla</p>
+                                      <q>TV tdk bisa digunakan karna STBnya. AC kurang dingin di kamar 6A, dan tamu lain banyak yg berisik kalo malem sangat menggangu apalagi anak kecil yg berisik banget, kamar tdk kedap suara. Untuk view memang sangat bagus. Staf ramah tamah semuanya. Pokoknya mantap sih</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="parangkritis_foto/parangtritis3.jpg">
+                                        <p class="author">- Ibrohim</p>
+                                      <q>Bagus viewnya dari hotel, semua kamar menghadap pantai jadi enak, langsung dapet view setiap saat. Ngobrol santai, hotel juga termasuk tinggi jadi emang view pegunungan dan pantai terlhat semua.
+
+                                        Suasana sepi, banyak kamar yg kosong, dan suasana kamar pun terasa hampa ya emang sebelumnya ada pandemi. Beberapa kamar kurang terawat.
+                                        
+                                        1 kamar -+ harga 300k semalam bisa max 3 orang.
+                                        Di kamar masih pake properti lama, seperti TV analog sebaiknya diganti dg TV LED, kamar mandi dg style lantai lama.</q><br>
+                                    </div>
+                                  
+                                    
+    </div>
+
+
+    <a href="h.parangkritis_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+  </a>
+
+    </body> 
+
+</html>

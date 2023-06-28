@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih hotel 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hotel.css">
+    </head>
+    <body>
+        <div class="hero">
+            <img src="waduk_hotel 2/hotel1.jpeg">
+                <div class="topnav">
+                   <b><img src="logo ppw.png" height="25px" ></b>
+                   <a href="contact.html">Contact Us</a>
+                   <a href="about.html">About</a>
+                   <a href="2_temp_dpn_yogya.html">Home</a>
+                </div>
+           </div>
+
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="waduk_hotel 2/hotel1.jpeg">
+            </div>        
+            <div class="image fade">
+            <img src="waduk_hotel 2/hotel3.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="waduk_hotel 2/hotel4.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Grand Dafam Signature International Airport Yogyakarta</h1>
+            <p>Grand Dafam Signature International Airport Yogyakarta dirancang secara dinamis dengan arsitektur modern yang bersinergi dengan kearifan lokal dalam memenuhi kebutuhan konsumen untuk tujuan bisnis maupun liburan. Properti baru ini memberikan suasana yang nyaman dalam menciptakan pengalaman mewah yang sesuai dengan gaya hidup menjadi penting dalam memberikan pelayanan kepada konsumen. Terletak tepat di seberang Yogyakarta International Airport; memiliki 197 kamar modern yang dilengkapi fasilitas restoran, pusat kebugaran, ballroom, ruang pertemuan dan fasilitas istimewa lainnya. Variasi olahan menu tradisional, Indonesia, Asia, bahkan Eropa akan mewarnai kesempurnaan hidangan yang istimewa dari team kulineri yang akan tersaji di Grandin dan Hermier Coffee Inc. lantai 1, Signature Lounge, d’View dengan pemandangan perbukitan Menoreh di sekitarnya terhubung ke Previere Lounge and Bar yang berlokasi di rooftop lantai 10. Memberikan pemandangan yang istimewa dan kami hadirkan “Willow SPA”yang bisa memberikan rileksasi dari padatnya kesibukan aktivitaskeseharian anda untuk menjaga kondisi tubuh tetap prima.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Dalam Hotel</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="waduk_hotel 2/hotel5.jpeg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="waduk_hotel 2/hotel6.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="waduk_hotel 2/hotel7.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.0854467134136!2d110.06299847307761!3d-7.886128992136439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7ae51811830ef7%3A0xef5a61ed85e09bb9!2sGrand%20Dafam%20Signature%20International%20Airport%20Yogyakarta!5e0!3m2!1sen!2sid!4v1687799407278!5m2!1sen!2sid"
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                                <h1>ULASAN</h1>
+                            <!-- Slideshow container -->
+                            <div class="con2">
+                                
+                                    <!-- Full-width slides/quotes -->
+                                    <div class="mySlides">
+                                        <img src="waduk_foto/waduk4.jpg">
+                                        <p class="author">- Winda</p>
+                                      <q>Overall hotelnya bagus ,masih bau baru. Breakfast nya oke banyak pilihan. Cuma kebersihan menurut saya kurang. Seprei dan sarung bantal di kamar banyak noda. Banyak cicak even waktu breakfast ada cicak mati di meja makan, air di kamar spt bau kaporit. Tapi next saya akan nginap di sini lagi, tempatnya bagus dan dekat akses ke bandara</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="waduk_foto/waduk8.jpg">
+                                        <p class="author">- Caca</p>
+                                      <q>Hotel terbaik menurut saya di Jogja, makanan super lengkap enak pula. Ada mesin cotton candy gaes. Harga juga sesuai dengan yg didapat, kamarnya bagus karena mungkin hotel baru, tapi kamarnya bagus dan oke banget. Sayang posisinya jauh dari kota jogja karena memang hotel bandara. thankyou.</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="waduk_foto/waduk9.jpg">
+                                        <p class="author">- Anjar</p>
+                                      <q>sangat bagus,,Hotel yang baru dibangun, dengan pilihan kamar yang beragam sehingga cocok dipakai acara refreshing. Hotel ini layak bintang 5 meski harganya terjangkau. Menawarkan semua fasilitas yang tersedia, teknologi yg canggih, layanan cepat tanggap. bisa melihat pemandangan indah di rooftop. baik sunset maupun</q><br>
+                                    </div>
+                                  
+                                   
+    </div>
+
+    <a href="h.waduk_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body>
+
+</html>

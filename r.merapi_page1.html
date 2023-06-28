@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih rumah makan 1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="RM.css">
+    </head>
+    <body>
+      <div class="hero">
+        <img src="foto_rm_merapi1/klotok3.jpg">
+            <div class="topnav">
+               <b><img src="logo ppw.png" height="25px" ></b>
+               <a href="contact.html">Contact Us</a>
+               <a href="about.html">About</a>
+               <a href="2_temp_dpn_yogya.html">Home</a>
+            </div>
+       </div>
+
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="foto_rm_merapi1/klotok2.jpg">
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_merapi1/klotok3.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="foto_rm_merapi1/klotok4.jpg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>Warung Kopi Klotok</h1>
+            <p>Masakan yang disajikan memang bersahaja, seperti sayur lodeh terong, dll. Namun, rasanya sangat lezat dan harganya bersahabat, rata-rata di bawah Rp10.000. Dengan atmosfer pedesaan Jawa, Warung Kopi Klotok dipenuhi wisatawan sejak buka pukul 7 pagi. Kopi klotok adalah cara pembuatan kopi secara tradisional di Jawa. Berbeda dengan cara modern yang diseduh, kopi direbus dalam panci di atas tungku arang sehingga mengeluarkan bunyi klotok-klotok ketika mendidih. Kata orang-orang, cara ini mirip pembuatan kopi tradisional di Turki. Selain kopi klotok yang menjadi signature drink, warung ini juga terkenal akan masakan khas desa seperti sayur lodeh terong, lodeh tempe lombok ijo, dll. Kita bisa menikmati sajian ini dalam ruangan dengan arsitektur Jawa atau di luar dengan pemandangan sawah dan Gunung Merapi.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Tempat</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="foto_rm_merapi1/klotok5.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_merapi1/klotok6.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="foto_rm_merapi1/klotok7.jpg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.119102160474!2d110.41873117307435!3d-7.670342892346363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5e80a3df1d61%3A0x3c02536343f1185c!2sWarung%20Kopi%20Klotok!5e0!3m2!1sen!2sid!4v1687742798299!5m2!1sen!2sid" 
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                      <h1>ULASAN</h1>
+                    <!-- Slideshow container -->
+                    <div class="con2">
+
+                      
+                          <!-- Full-width slides/quotes -->
+                          <div class="mySlides">
+                              <img src="merapi_foto/merapi1.jpg">
+                              <p class="author">- Intan</p>
+                            <q>ruamee. Tp ga terlalu ngantri karna dateng pas weekday. Kalau dateng hari minggu, siap siap ngantri deh sampe keluar tempatnya. Harganya termasuk mahal untuk kalangan mahasiswa dengan menu-menu sederhana kaya gitu, tp kalau untung orang kota atau wisatawan kayaknya termasuk murah deh. Karna selain jual makanan di kopi klothok itu jual suasana dan tempat. Dipinggir sawah dan kesan bangunan tradisional jawa, apalagi open kitchen yang kita bisa liat langsung dapur pembuatan pisang goreng, makanan favorit dan icon dari kopi klothok itu sendiri.</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="merapi_foto/merapi3.jpg">
+                              <p class="author">- Kuswoyo</p>
+                            <q>Luar biasa ngantrinya untuk pas kesini gak begitu padat yaa cuma nganti sekitar 30-35 Menit kalo kaga salah,...
+                              Rekomendasi buat temen-temen yg ke Jogja wajib kesini deh, makanya ala rumahan gitu dari per lodeh- lodehan sampe ada Oseng-osengan harganya udah per paket kalo nasi sama sayurnya bebas kalian ngambil segimanapun harganya sama, jangan lupa kalian beli telor dadar krispinya pas kesana kehabisan tp nunggu agak bentaran kok, tinggal konfirmasi aja ke mas/mba yg jaga disana minta nanti di anterin.
+                              Jangan lupa beli pisang gorengnya 1 porsi isi 2, setauku di batasi hanya bisa pesen 3 porsi saja tp kalo kalian rombongan banyakan orang ya boleh beli banyak.
+                              Kopi klotoknya juga mantabb kok minum kopi di pinggiran sawah.
+                              Bakalan dateng lg keisni sih.</q><br>
+                          </div>
+                        
+                          <div class="mySlides">
+                              <img src="merapi_foto/merapi5.jpg">
+                              <p class="author">- Linda</p>
+                            <q>Kesini pas erupsi, pemandangan bagus tapi aga ngeri, makanan pastinya masih enak seperti biasanya, suasana kaya makan dirumah (tapi dirumahku gaada telur sama pisang gini) seringnya lodeh sama beningnya. Hehee, pisangnya juara sih sampe nambah. Kalo siang panas, jadi dimeja² ajaa lebih santai. Kalo udah sorean baru lesehan pasti seruuu</q><br>
+                          </div>
+                        
+                         
+       
+    </div>
+
+
+
+    <a href="r.merapi_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+
+    </body>
+
+
+
+</html>

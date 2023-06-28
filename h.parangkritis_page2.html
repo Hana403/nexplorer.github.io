@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pilih hotel 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="hotel.css">
+    </head>
+    <body>
+        <div class="hero">
+            <img src="parangkritis_hotel 1/parangtritis5.jpg">
+                <div class="topnav">
+                   <b><img src="logo ppw.png" height="25px" ></b>
+                   <a href="contact.html">Contact Us</a>
+                   <a href="about.html">About</a>
+                   <a href="2_temp_dpn_yogya.html">Home</a>
+                </div>
+           </div>
+
+   
+
+
+    <div class="min">
+        <div class="image-slideshow">
+            <div class="image fade">
+            <img src="parangkritis_hotel 2/hotel9.jpeg">
+            </div>        
+            <div class="image fade">
+            <img src="parangkritis_hotel 2/hotel8.jpg" >
+            </div>        
+            <div class="image fade">
+            <img src="parangkritis_hotel 2/hotel7.jpeg">
+            </div>
+          </div>
+    
+        
+        <script>
+            let index = 0;
+            displayImages();
+            function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+             images[i].style.display = "none";
+             }
+            index++;
+            if (index > images.length) {
+             index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 2000); 
+            }
+        </script>
+    
+        <div class="desc">
+            <h1>RedDoorz near Parangtritis Beach</h1>
+            <p>Terletak di kota Parangtritis, RedDoorz near Parangtritis Beach berada 3 menit dengan berkendara dari Gumuk Pasir Parangkusumo dan 6 menit dari Pantai Depok. Wisma ini berada 28,3 mi (45,5 km) dari Candi Prambanan dan 1,4 mi (2,2 km) dari Pantai Parangkusumo.
+              Wisma bebas rokok ini dibangun pada tahun 2010.
+              Parkir mandiri gratis tersedia di lokasi.
+              Nikmati kenyamanan rumah Anda sendiri di salah satu dari 5 kamar berpenyejuk udara yang dilengkapi dengan televisi layar datar. Akses Internet nirkabel gratis tersedia untuk menjamin koneksi Anda; Untuk hiburan, satelit disediakan. Kamar mandi mempunyai shower dan perlengkapan mandi gratis. Fasilitas mencakup air minum kemasan gratis dan layanan pembenahan kamar disediakan setiap hari.</p>
+        </div>
+    
+        <div class="desc">
+            <h1>Foto Dalam Hotel</h1>
+        </div>
+    
+        <div class="popup">
+          <img style="width:8cm;height: 5cm;border-radius: 10px;" id="myImg" class="img-fluid" src="parangkritis_hotel 2/hotel2.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="parangkritis_hotel 2/hotel3.jpg">
+           <img style="width:8cm;height: 5cm;border-radius: 10px;"  id="myImg" class="img-fluid" src="parangkritis_hotel 2/hotel4.jpeg">
+          
+          
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modal-img" class="modal-content"  >
+              
+          
+          </div>
+        </div>
+
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img"> 
+        </div>
+
+        <script>
+
+
+        var modal = document.getElementById("myModal");
+
+        var modalImg = document.getElementById("modal-img");
+        var captionText = document.getElementById("caption");
+
+
+
+        document.addEventListener("click", (e) => {
+        const elem = e.target;
+        if (elem.id==="myImg") {
+       modal.style.display = "block";
+        modalImg.src = elem.dataset.biggerSrc || elem.src;
+       captionText.innerHTML = elem.alt; 
+       }
+       })
+
+
+      var span = document.getElementsByClassName("close")[0];
+      span.onclick = function() { 
+      modal.style.display = "none";
+     }
+        </script>
+    
+        <div class="map">
+            <div class="desc"><h1>MAP</h1></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126425.43435182063!2d110.25010183906248!3d-8.020081400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7babc712682b43%3A0x269fd3bc993ab59b!2sRedDoorz%20near%20Parangtritis%20Beach!5e0!3m2!1sen!2sid!4v1687786120082!5m2!1sen!2sid" 
+             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+        </div>
+                        <h1>ULASAN</h1>
+                            <!-- Slideshow container -->
+                            <div class="con2">
+        
+                                
+                                    <!-- Full-width slides/quotes -->
+                                    <div class="mySlides">
+                                        <img src="parangkritis_foto/parangtritis3.jpg">
+                                        <p class="author">- Satriyo</p>
+                                      <q>Saya akui tempatnya pemandangannya oke, tapi mas kasur sama spreimu apeg tenan. Parkiran dibuat aman. Harga segini oke lah dapat AC dan kamar mandi bathup. Semoga lebih profesional lagi</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="parangkritis_foto/parangtritis4.jpg">
+                                        <p class="author">- Bima</p>
+                                      <q>Reddorz dengan view paling kereen.. terletak di area perbukitan parangtris sebelah utara. Akses jalan mudah dicari namun perlu berhati2 jika berkendara menuju lokasi karena ada tanjakan lumayan tinggi. Kamar luas dan bersih.dapet kamar tengah. AC berfungsi. Tidak ada air panas. Saran kalo menginap disini bawa bekal cemilan /makanan dari bawah biar ga ribet naik turun.</q><br>
+                                    </div>
+                                  
+                                    <div class="mySlides">
+                                        <img src="parangkritis_foto/parangtritis6.jpeg">
+                                        <p class="author">- Tuti</p>
+                                      <q>Kamar bersih, luas, pemandangan bagus. 2x nginep disini, pas pertama kali dapet bed kecil2 yg disatuin jadi ukuran queen jadi kurang nyaman Karna bikin nyupsep, tapi buat tv AC shower nyala lancar, bathtub juga bersih. Kedua kali nginep disini dapet bed yang bener2 queen, ac tv lancar, cuma showernya aja yg nyalanya lambat bener. Oh iya dan tolong sediakan lahan parkir yg aman dong, biar kalau hujan kendaraan engga keujanan</q><br>
+                                    </div>
+                                  
+                                   
+    </div>
+
+    <a href="h.parangkritis_topnav_nochose.html">
+      <div class="Back"> ⇦ </div>
+    </a>
+    </body>
+
+</html>
